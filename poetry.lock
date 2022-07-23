@@ -1,0 +1,42 @@
+[[package]]
+name = "jinja2"
+version = "3.1.2"
+description = "A very fast and expressive template engine."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[package.dependencies]
+MarkupSafe = ">=2.0"
+
+[package.extras]
+i18n = ["Babel (>=2.7)"]
+
+[[package]]
+name = "laiarturs-ros-api"
+version = "1.0.0"
+description = "Connect to and use API interface of MikroTik RouterOS"
+category = "main"
+optional = false
+python-versions = ">=3.4"
+
+[package.extras]
+dev = ["bump2version"]
+
+[[package]]
+name = "markupsafe"
+version = "2.1.1"
+description = "Safely add untrusted strings to HTML/XML markup."
+category = "main"
+optional = false
+python-versions = ">=3.7"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "^3.9"
+content-hash = "bec51f35e33987e644ff8d08587fc33c55366662431dd82c3192e3aacbeb8081"
+
+[metadata.files]
+jinja2 = []
+laiarturs-ros-api = []
+markupsafe = []

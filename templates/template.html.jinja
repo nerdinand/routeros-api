@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CapsMan clients</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Floor</th>
+                <th>2.4 GHz Clients</th>
+                <th>5 GHz Clients</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for floor_info in floor_infos %}
+                <tr>
+                    <td>{{ floor_info.name }}</td>
+                    <td>{{ floor_info.count_24GHz }}</td>
+                    <td>{{ floor_info.count_5GHz }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total</td>
+                <td>{{ floor_infos|sum(attribute='count_24GHz') }}</td>
+                <td>{{ floor_infos|sum(attribute='count_5GHz') }}</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
